@@ -1,11 +1,11 @@
 package models
 
 import (
+	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/lunny/xorm"
-	"fmt"
 )
 
 func main() {
-	xorm.
+	xorm.NewEngine("mysql", dataSourceName)
 }
